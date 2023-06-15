@@ -13,11 +13,11 @@ pipeline {
             }
         }
        
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
+        // stage('Install Dependencies') {
+        //     steps {
+        //         sh 'npm install'
+        //     }
+        // }
         stage('Install SBOM tool') {
             steps {
                 sh 'npm install -g @cyclonedx/cdxgen'
